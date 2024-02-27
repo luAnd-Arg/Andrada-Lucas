@@ -1,0 +1,45 @@
+@import url(./components/navBar/NavBar.css);
+@import url(./components/cart/Cart.css);
+@import url(./components/listConteiner/listConteiner.css);
+@import url(./components/itemListConteiner/itemListConteiner.css);
+.App {
+  box-sizing: border-box;
+}
+
+.App-logo {
+  height:3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App_header {
+  background-color:black;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size:1rem;
+  text-decoration: none;
+}
+.app_title{
+  color: white;
+  text-decoration: none;
+}
+.App_link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

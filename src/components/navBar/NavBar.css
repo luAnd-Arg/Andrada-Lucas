@@ -1,0 +1,40 @@
+.navegacion{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: black;
+    width: 100%;
+    height: auto;
+   }
+ul{
+    margin: 0 auto;
+    display: flex;
+}
+li{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1vw;
+    list-style: none;
+    
+}
+a{
+    background-color: black;
+    color:greenyellow;
+    font:500;
+    font-size: larger;
+    text-decoration: none;
+}
+
+a :visited{
+    color: aliceblue;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+ }
