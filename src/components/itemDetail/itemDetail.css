@@ -1,0 +1,12 @@
+.itemDetail{
+    display: flex;
+    margin-left: 1rem;
+    padding: 1%;
+}
+.contenedor{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}

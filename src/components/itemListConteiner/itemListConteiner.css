@@ -1,24 +1,7 @@
-.itemListConteiner{
-    display: block;
-    background-color: black;
-    color: aliceblue;
-    }
-.saludo{
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 100vw;
-    height: 50vh;
-}
-.mensaje{
-    text-align: center;
-    width: 50vw;
-    margin-right: 5vw;
-    margin-top: 100px;
+.itemListConteiner {
+    display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-}
-h3{
-    background-color: black;
-}
+    padding: 20px;
+  }
+  

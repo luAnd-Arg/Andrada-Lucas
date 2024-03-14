@@ -1,11 +1,23 @@
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40; /* Color de fondo */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
 .navegacion{
     display: flex;
     text-align: center;
     justify-content: center;
     color: aliceblue;
-    background-color: black;
+    background-color: rgb(237, 136, 136);
     width: 100%;
-    height: auto;
+    height: 7rem;
    }
 ul{
     margin: 0 auto;
@@ -23,8 +35,7 @@ li{
     
 }
 a{
-    background-color: black;
-    color:greenyellow;
+    color: orange;
     font:500;
     font-size: larger;
     text-decoration: none;
@@ -37,4 +48,9 @@ a :visited{
     display: flex;
     flex-direction: column;
     font-size: small;
+ }
+ h1{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
  }

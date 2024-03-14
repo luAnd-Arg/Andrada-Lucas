@@ -1,17 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navBar/NavBar';
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import Nosotros from './components/nosotros/Nosotros';
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import ItemListConteiner from './components/itemListConteiner/ItemListConteiner';
+import Carrito from './components/cart/Carrito';
+
 function App() {
   return (
-    <div className="App">
-    <header className='App_header'>
-      <h1 className='app_title'> <a href='#'> < img src={logo} className="App-logo" alt="logo" />Pañalera "LuAnd" < img src={logo} className="App-logo" alt="logo" /></a> 
-      </h1>
-    </header>        
-<NavBar />
-<ItemListConteiner saludo = "Bienvenido a nuestra pagina oficial" mensaje ="Sitio en Construcción"/>
+    
+<div className="App">
+  <BrowserRouter>
+  <header className='App_header'>
+  <NavBar/>
+  </header>
+  <Routes>
+   <Route path='/' element={<Home/>}/>
+   <Route path='/item/:id' element={<ItemDetailContainer />}/>
+   <Route path='/productos/:categorias' element = {<ItemListConteiner/>}/>
+   <Route path='/productos' element = {<ItemListConteiner/>}/>
+   <Route path='/nosotros' element={<Nosotros/>} />
+   <Route path='/carrito' element={<Carrito/>}/>
+   {/* <Route path='/contacto' element={<Contacto/>} /> */}
+  </Routes>
+  
+  </BrowserRouter>
 </div>
+
   );
 }
 

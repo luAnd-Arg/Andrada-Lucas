@@ -1,11 +1,13 @@
 @import url(./components/navBar/NavBar.css);
 @import url(./components/cart/Cart.css);
-@import url(./components/listConteiner/listConteiner.css);
 @import url(./components/itemListConteiner/itemListConteiner.css);
+@import url(./components/ItemList/itemList.css);
+@import url(./components/item/item.css);
+@import url(./components/itemDetail/itemDetail.css);
+@import url(./components/home/home.css);
 .App {
   box-sizing: border-box;
 }
-
 .App-logo {
   height:3rem;
 }
@@ -19,6 +21,7 @@
 .App_header {
   background-color:black;
   display: flex;
+  width:auto;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
